@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      background-color: #E0F5FF;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      animation: slideInDown 1s ease-out;
+    }
+
+    @keyframes slideInDown {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      background-color: #023947;
+      padding: 10px 0;
+      border-radius: 5px;
+      color: #ffffff;
+    }
+
+    .section-title h2 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      font-size: 16px;
+    }
+
+    .section-content {
+      text-align: justify;
+      line-height: 1.6;
+      color: #333333;
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+       0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .blog-post {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .blog-post-item {
+      flex-basis: calc(33.33% - 20px);
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: #f7f7f7;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .blog-post-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .blog-post-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .blog-post-item p {
+      font-size: 14px;
+      color: #666666;
+      line-height: 1.5;
+    }
+
+    @media screen and (max-width: 768px) {
+      .blog-post-item {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="section">
+      <div class="section-title">
+        <h2>Blog</h2>
+        <p>M & O is an international consulting firm registered in India with a core mission to provide services in the area of international recruitment, overseas Education, and immigration</p>
+      </div>
+    </div>
+
+    <div class="blog-post">
+      <div class="blog-post-item">
+        <img src="image1.jpg" alt="Blog Image 1">
+        <h3>Blog Post 1</h3>
+        <p>Lorem
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam nulla sed nisl feugiat, sit amet lobortis arcu efficitur. Suspendisse id mi non tellus interdum cursus. Pellentesque sed diam eget massa venenatis dictum. Duis viverra tortor non diam posuere, at feugiat lectus dapibus. Nulla facilisi. Sed aliquam, ex id placerat fermentum, justo mi tempus nisl, sed aliquam enim orci et nisi. Sed pharetra orci id ante accumsan, id condimentum velit tincidunt. Nam et aliquam enim.</p>
+        </div>
+  
+        <div class="blog-post-item">
+          <img src="image2.jpg" alt="Blog Image 2">
+          <h3>Blog Post 2</h3>
+          <p>Vestibulum malesuada metus eget tristique porttitor. Fusce sit amet tristique elit, at lobortis nisl. Aliquam eu fringilla risus. Quisque consequat iaculis urna, eu lobortis odio laoreet et. Nullam vestibulum elit vel enim bibendum viverra. Nullam fermentum augue eu lectus lobortis gravida. Aliquam euismod libero et elit tristique fringilla. Aenean ac justo id arcu placerat fringilla ut nec dui.</p>
+        </div>
+  
+        <div class="blog-post-item">
+          <img src="image3.jpg" alt="Blog Image 3">
+          <h3>Blog Post 3</h3>
+          <p>Curabitur vulputate justo nec volutpat rhoncus. Mauris eget varius eros, eu lobortis metus. Etiam auctor ullamcorper sapien, eget pharetra risus congue a. Mauris pellentesque eros id est interdum vestibulum. Maecenas blandit metus vel neque luctus commodo. Mauris tristique lacus eu nisi venenatis, at hendrerit nulla consequat. Nullam fringilla ullamcorper massa, et suscipit est aliquam sed. Integer in malesuada nulla, sed sagittis nisl. Ut eleifend, elit nec efficitur facilisis, felis justo efficitur orci, sed ultrices ex velit a justo.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
+  
